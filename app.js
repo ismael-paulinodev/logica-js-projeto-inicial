@@ -11,12 +11,40 @@
 //   alert("Dados Invalidos");
 // }
 
-// let diaDaSemana = prompt("Digite um dia da semana");
-// if (diaDaSemana === "Sabado" || diaDaSemana === "Domingo") {
-//   alert("Hoje é fim de semana!");
-// } else {
-//   alert("Hoje é dia útil!");
+
+
+// // Arrays com os dias válidos
+// let fimDeSemana = ["sabado", "domingo"];
+// let diasUteis = ["segunda", "terca", "quarta", "quinta", "sexta"];
+
+// // Variável que controla o loop
+// let diaValido = false;
+
+// // Loop roda enquanto o usuário não digitar um dia correto
+// while (!diaValido) {
+
+//   // Pede o dia e converte para minúsculo
+//   let dia = prompt("Digite um dia da semana").toLowerCase();
+
+//   // Verifica se está no array de fim de semana
+//   if (fimDeSemana.includes(dia)) {
+//     alert("Hoje é fim de semana!");
+//     diaValido = true; // encerra o loop
+//   }
+
+//   // Verifica se está no array de dias úteis
+//   else if (diasUteis.includes(dia)) {
+//     alert("Hoje é dia útil!");
+//     diaValido = true; // encerra o loop
+//   }
+
+//   // Caso não esteja em nenhum array
+//   else {
+//     alert("Dia inválido! Tente novamente.");
+//   }
 // }
+
+
 
 // let numero = Number(prompt("Digite um número"));
 // if (numero < 0) {
@@ -75,10 +103,10 @@
 //   sorteado--;
 // }
 
-let sorteado = Math.floor(Math.random() * 50);
-let contador = 0;
+// let sorteado = Math.floor(Math.random() * 50);
+// let contador = 0;
 
-while (contador <= sorteado) {
-  console.log(contador);
-  contador++;
-}
+// while (contador <= sorteado) {
+//   console.log(contador);
+//   contador++;
+// }
