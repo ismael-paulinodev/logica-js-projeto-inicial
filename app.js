@@ -1,6 +1,22 @@
 // alert("Boas vindas ao nosso site");
 
 // let nome = prompt("Qual o seu nome?");
+// console.log(`Olá, ${nome}.`);
+// alert(`Olá, ${nome}.`);
+// let linguagemP = prompt("Qual linguagem de programação que você mais gosta?");
+// console.log(linguagemP);
+
+// let valor1 = prompt("Digite o primeiro numero.");
+// let valor2 = prompt("Digite o segundo numero.");
+
+// let resultadoSoma = Number(valor1) + Number(valor2);
+// console.log(`A soma de ${valor1} e ${valor2} é igual a ${resultadoSoma}}.`);
+
+// let resultadoSubtração = Number(valor1) - Number(valor2);
+// console.log(
+//   `A subtração de ${valor1} e ${valor2} é igual a ${resultadoSubtração}}.`,
+// );
+
 // let idade = Number(prompt("Qual sua idade?"));
 // let numeroDeVendas = Number(prompt("Quantas vendas fez?"));
 // let saldoDisponivel = Number(prompt("Qual saldo disponivel?"));
@@ -10,8 +26,6 @@
 // } else {
 //   alert("Dados Invalidos");
 // }
-
-
 
 // // Arrays com os dias válidos
 // let fimDeSemana = ["sabado", "domingo"];
@@ -44,8 +58,6 @@
 //   }
 // }
 
-
-
 // let numero = Number(prompt("Digite um número"));
 // if (numero < 0) {
 //   alert("O número é negativo");
@@ -64,9 +76,12 @@
 // while (tentativas < maxTentativas) {
 //   let chute = Number(prompt("Digite um número entre 0 e 10"));
 //   tentativas++;
+//   let palavraTentativa = tentativas <= 1 ? "tentativa" : "tentativas";
 
 //   if (chute === numeroSorteado) {
-//     alert(`Parabéns! Você acertou!\nPontuação: ${pontos}`);
+//     alert(
+//       `Parabéns! Você acertou em ${tentativas} ${palavraTentativa}!\nPontuação: ${pontos}`,
+//     );
 //     break;
 //   } else {
 //     pontos -= 10;
@@ -110,3 +125,16 @@
 //   console.log(contador);
 //   contador++;
 // }
+
+// let palavraPessoa = "";
+
+// if(quantidadePessoas == 1){
+//     palavraPessoa = "pessoa";
+// }else{
+//     palavraPessoa = "pessoas"
+// }
+
+//Refatorando com operador Ternario
+// let palavraPessoa = "";
+
+// let palavra = quantidadePessoas == 1 ? "pessoa" : "pessoas";
